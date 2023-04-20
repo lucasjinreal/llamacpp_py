@@ -3,8 +3,8 @@ requires = ["scikit-build-core>=0.2.1", "pybind11>2.10"]
 build-backend = "scikit_build_core.build"
 
 [project]
-name = "llamacpp"
-version = "0.1.15"
+name = "llamapy"
+version = "0.2.0"
 description = "Python bindings for @ggerganov's llama.cpp"
 authors = [
     {name = "Thomas Antony", email= "mail@thomasantony.com"}
@@ -25,8 +25,8 @@ classifiers = [
 ]
 
 [project.urls]
-homepage = "https://github.com/thomasantony/llamacpp-python"
-repository = "https://github.com/thomasantony/llamacpp-python"
+homepage = "hhttps://github.com/lucasjinreal/llamacpp_py"
+repository = "hhttps://github.com/lucasjinreal/llamacpp_py"
 
 [tool.scikit-build]
 wheel.expand-macos-universal-tags = true
@@ -39,7 +39,7 @@ llamacpp-cli = 'llamacpp.cli:run'
 llamacpp-chat = 'llamacpp.chat:run'
 
 [tool.cibuildwheel]
-test-command = "python -c \"import llamacpp\""
+test-command = "python -c \"import llamapy\""
 
 # Skip Python 3.6, PyPy and 32-bit builds
 skip = ["cp36-*", "pp*", "*-win32", "*-manylinux_i686", "*-musllinux_i686"]

@@ -15,6 +15,29 @@ I might bridge it into rust in the future as well.
 > still work in progress, but you can star and fork subscribe my updates.
 
 
+## Install
+
+Run:
+
+```
+pip install -e .
+```
+
+
+## API Design
+
+this wrapper using pybind, os basically I have redesign the previous c++ API. to make it more pythonic, I also provide a class called `HumbleLLaMas` for engage with c++.
+
+```
+from llamapy.llama import HumbleLLaMas
+
+
+llamabot = HumbleLLaMas()
+# you can call LLaMa, Alpaca, Vicuna, Chinese-Vicuna at ease (with different tokenizer possible)
+```
+
+Above APIs still under design.
+
 
 
 

@@ -1,7 +1,7 @@
-import llamacpp
+import llamapy
 
 # Expose the bindings in module
-from .llamacpp import (InferenceParams,
+from .llamapy import (InferenceParams,
     LlamaInference,
     LlamaContext,
     LlamaContextParams,
